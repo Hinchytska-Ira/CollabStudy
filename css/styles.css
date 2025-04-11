@@ -1,0 +1,630 @@
+/* Global styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header{
+
+
+    z-index: 10;
+    position: fixed;
+
+}
+.header-styles{
+
+
+    z-index: 10;
+
+}
+
+/* Додати відступ зверху для основного контенту */
+.main-content {
+    height: 100vh; /* Висота на весь екран */
+    display: flex;
+    justify-content: center; /* Центруємо контент по горизонталі */
+    align-items: center; /* Центруємо контент по вертикалі */
+    text-align: center; /* Центруємо текст */
+}
+.main-wrapper {
+    max-width: 1164px;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 30px;
+    background: #ABC4FF;
+    position: fixed;
+  }
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    background: #ABC4FF;
+    font-size: 1.125rem; /* Збільшуємо базовий розмір шрифта для всього тексту */
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+  }
+
+/* Rectangle 21 (Header Background) */
+.rectangle {
+ /* Rectangle 21 */
+
+position: fixed;
+width: 100%;
+height: 80px;
+left: 0px;
+top: 0px;
+
+background: #D7E3FC;
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+border-radius: 0px 0px 30px 30px;
+
+}
+
+/* CollabStudy (Text in Header) */
+.collab-study {
+    position: fixed;
+    left: 105px;
+    margin-top: 25px;
+    font-family: 'Roboto';
+    font-style: italic;
+    font-weight: 700;
+    font-size: 24px;
+    color: #FFFFFF;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+/* Group 4 (Logo) */
+.group-4 {
+    position: fixed;
+    left: 32px;
+    top: 14.04px;
+}
+
+/* Menu Section */
+.menu {
+    position: fixed;
+    left: 50px; /* Distance from left */
+    top: 24px;
+    display: flex;
+    gap: 21px; /* Set distance between icons to 21px */
+    align-items: center;
+}
+
+.menu img {
+    width: 30px;
+    height: 30px;
+}
+
+/* Buttons Section */
+.buttons {
+    position: fixed;
+    right: 20px;
+    top: 24px;
+    display: flex;
+    gap: 1px; /* Set distance between buttons to 18px */
+    align-items: center;
+}
+
+/* Button styling */
+a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Roboto';
+    font-style: italic;
+    font-weight: 700;
+    font-size: 13px;
+    color: #FFFFFF;
+    border-radius: 30px;
+    text-align: center;
+    letter-spacing: 0.5px;
+    text-decoration: none;
+    padding: 5px 15px;
+}
+
+.login {
+    background: #8AA8EC;
+    border: 1px solid #E2EAFC;
+    border-radius: 30px 0px 0px 30px;
+}
+
+.sign-in {
+    background: #ABC4FF;
+    border: 1px solid #E2EAFC;
+    border-radius: 0px 30px 30px 0px;
+}
+
+/* Icons Section: Move icons to the right of the buttons */
+.icon-container {
+    display: flex;
+    gap: 18px; /* Set gap between icons */
+    margin-left: 18px; /* Ensure icons are after buttons */
+}
+
+.menu img {
+    width: 30px;
+    height: 30px;
+}
+
+/* Responsive styles */
+
+/* Tablet View (max-width: 768px) */
+@media (max-width: 768px) {
+    .rectangle {
+        height: 70px;
+    }
+
+    .collab-study {
+        font-size: 20px;
+        left: 20px;
+    }
+
+    .menu {
+        flex-direction: column;
+        left: 20px;
+        top: 60px;
+    }
+
+    .menu img {
+        width: 24px;
+        height: 24px;
+    }
+
+    .buttons {
+        flex-direction: column;
+        top: 110px;
+        right: 20px;
+        gap: 1px; /* Reduce gap between buttons for small screens */
+    }
+
+    .login,
+    .sign-in {
+        font-size: 12px;
+        padding: 5px 10px;
+    }
+
+    .icon-container {
+        gap: 10px; /* Reduce gap between icons */
+    }
+}
+
+/* Mobile View (max-width: 480px) */
+@media (max-width: 480px) {
+    .collab-study {
+        font-size: 18px;
+        left: 15px;
+    }
+
+    .menu {
+        left: 15px;
+        top: 80px;
+        gap: 10px; /* Reduce gap between icons for small screens */
+    }
+
+    .buttons {
+        flex-direction: column;
+        top: 120px;
+        right: 10px;
+        gap: 8px; /* Reduce gap between buttons for mobile screens */
+    }
+
+    .login,
+    .sign-in {
+        font-size: 11px;
+        padding: 5px 8px;
+    }
+
+    .menu img {
+        width: 20px;
+        height: 20px;
+    }
+
+    .icon-container {
+        gap: 8px;
+    }
+}
+@media (max-width: 768px) {
+    .main-content {
+        padding: 20px;
+    }
+}
+@import url('https://fonts.googleapis.com/css2?family=SF+Pro+Display:wght@400;600;700&display=swap');
+
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-top: 40px;
+    flex-wrap: wrap;
+  }
+
+.hero-text-2{
+    /* СollabStudy допоможе знайти однодумців для спільного навчання та проектів. */
+
+position: absolute;
+width: 900px;
+height: 100px;
+left: 89px;
+top: 401px;
+
+font-family: 'Roboto';
+font-style: italic;
+font-weight: 700;
+font-size: 20px;
+line-height: 24px;
+/* or 120% */
+letter-spacing: 0.5px;
+
+color: #FFFFFF;
+
+text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+}
+  
+.hero-text {
+max-width: 700px;
+color: #fff;
+text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+
+.hero-text-position{
+
+    margin-right: 200px;
+
+}
+.start-button-position{
+    /* Group 28 */
+
+position: absolute;
+width: 321.71px;
+height: 98.79px;
+left: 174px;
+top: 528px;
+font-size: 1.25rem; /* Встановлюємо більший розмір шрифта для кнопки */
+padding: 10px 20px; /* Додаємо більше відступів до кнопки */
+margin-left: 150px; /* Додаємо лівий відступ для переміщення правіше */
+
+}
+
+/* Збільшення розміру заголовка */
+.hero-text h1 {
+    font-size: 3rem; /* Встановлюємо більший розмір шрифта для заголовка */
+    font-weight: 700; /* Встановлюємо жирний шрифт */
+    line-height: 1.2;
+    /* Знаходити напарника легко! */
+text-align: left;
+position: absolute;
+width: 700px;
+height: 50px;
+left: 89px;
+top: 271px;
+
+font-family: 'Roboto';
+font-style: italic;
+
+line-height: 24px;
+/* or 50% */
+letter-spacing: 0.5px;
+
+color: #FFFFFF;
+
+text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+margin-left: 150px; /* Додаємо лівий відступ для переміщення правіше */
+}
+
+.hero-text-2 p {
+    font-size: 1.5rem; /* Встановлюємо більший розмір шрифта для підзаголовка */
+    line-height: 1.6;
+    text-align: left;
+
+    font-style: italic;
+    font-weight: 700;
+    max-width: 600px;
+    margin-right: 80px;
+    margin-left: 150px; /* Додаємо лівий відступ для переміщення правіше */
+}
+
+
+body {
+    font-size: 1.125rem; /* Збільшуємо базовий розмір шрифта для всього тексту */
+    line-height: 1.6;
+}
+
+
+.text-position-main{
+
+
+    /* text-position */
+
+position: absolute;
+width: 900px;
+height: 230px;
+left: 89px;
+top: 271px;
+
+
+
+}
+  .start-button {
+    display: inline-block;
+    margin-top: 30px;
+    background: #C1D3FE;
+    border: 1px solid #EDF2FB;
+    border-radius: 20px;
+    padding: 24px 48px;
+    font-size: 48px;
+    font-style: italic;
+    font-weight: 700;
+    color: #fff;
+    text-decoration: none;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  }
+  
+  .hero-photos {
+    display: flex;
+    flex-wrap: wrap;
+
+    background: url(photo_2024-10-07_14-42-40.jpg);
+    background-blend-mode: hard-light;
+
+  }
+  
+  .hero-photos img {
+    
+    height: auto;
+    object-fit: cover;
+    filter: grayscale(100%);
+    mix-blend-mode: hard-light;
+    margin-left: 500px;
+
+  }
+
+  .hero-img-1{
+
+
+position: absolute;
+width: 99.65px;
+height: 133px;
+left: 668px;
+top: 395px;
+
+
+background-blend-mode: hard-light;
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+  }
+
+.hero-img-2{
+
+position: absolute;
+width: 129.75px;
+height: 173px;
+left: 768px;
+top: 393px;
+
+
+background-blend-mode: hard-light;
+
+  }
+  .hero-img-3{
+
+/* photo_2025-02-11_19-04-19 3 */
+
+position: absolute;
+width: 117.29px;
+height: 176px;
+left: 756.29px;
+top: 217px;
+
+background-blend-mode: hard-light;
+transform: matrix(-1, 0, 0, 1, 0, 0);
+
+
+
+  }
+  .hero-img-4{
+/* photo_2025-02-26_12-25-09 2 */
+
+position: absolute;
+width: 96.19px;
+height: 171px;
+left: 873px;
+top: 128px;
+
+background-blend-mode: hard-light;
+
+
+
+  }
+.hero-img-5{
+
+/* photo_2024-11-21_14-31-22 3 */
+
+position: absolute;
+width: 95.9px;
+height: 128px;
+left: 873px;
+top: 299px;
+
+background-blend-mode: hard-light;
+
+
+
+  }
+  
+
+.hero-img-6{
+
+/* photo_2024-11-14_13-28-24 3 */
+
+position: absolute;
+width: 69px;
+height: 92px;
+left: 969px;
+top: 156px;
+
+background-blend-mode: hard-light;
+
+
+    }
+  
+.hero-img-7{
+
+/* photo_2024-11-27_17-58-26 3 */
+
+position: absolute;
+width: 134.25px;
+height: 179px;
+left: 968px;
+top: 248px;
+
+background-blend-mode: hard-light;
+
+
+  }
+
+.hero-img-8{
+
+/* photo_2025-02-11_19-03-50 3 */
+
+position: absolute;
+width: 189.93px;
+height: 285px;
+left: 898px;
+top: 427px;
+
+background-blend-mode: hard-light;
+
+
+
+    }
+
+.hero-img-9{
+
+/* photo_2024-11-22_15-00-41 3 */
+
+position: absolute;
+width: 96px;
+height: 128px;
+left: 802px;
+top: 566px;
+
+background-blend-mode: hard-light;
+
+
+
+    }
+  
+
+/* styles.css */
+
+/* Основні стилі футера */
+/* Основні стилі для футера */
+/* Основні стилі для футера */
+.footer {
+    background-color: #2C2C2C; /* Темно-сірий фон */
+    color: #FFFFFF;
+    padding: 40px 20px;
+    position: relative;
+    width: 100%;
+    bottom: 0;
+    box-shadow: 0 -2px 8px rgba(0, 0, 0, 0.1); /* Легкий тіньовий ефект для футера */
+}
+
+/* Контейнер для футера */
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap; /* Для адаптивного дизайну */
+    gap: 30px; /* Простір між колонками */
+}
+
+/* Логотип і назва сайту */
+.footer-logo {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    max-width: 200px;
+}
+
+.footer-logo-img {
+    width: 40px;
+    height: auto;
+    margin-right: 10px;
+    border-radius: 50%;
+    border: 2px solid #FFC107; /* Кільце навколо логотипа */
+}
+
+.footer-site-name {
+    font-size: 24px;
+    font-weight: 700;
+    color: #FFC107; /* Золотистий колір для назви */
+}
+
+/* Колонки з посиланнями, соціальними мережами та додатковою інформацією */
+.footer-links, .footer-social, .footer-about {
+    width: 100%;
+    max-width: 250px;
+    flex: 1;
+}
+
+.footer-links h3, .footer-social h3, .footer-about h3 {
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+.footer-links ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links li {
+    margin-bottom: 12px;
+}
+
+.footer-links a {
+    color: #B0B0B0; /* Світло-сірий для посилань */
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.footer-links a:hover {
+    color: #FFC107; /* Золотистий колір при наведенні */
+    text-decoration: underline;
+}
+
+.footer-social {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.social-link {
+    color: #B0B0B0; /* Світло-сірий для посилань */
+    font-size: 18px;
+    text-decoration: none;
+}
+
+.social-link:hover {
+    color: #FFC107; /* Золотистий колір при наведенні */
+    text-decoration: underline;
+}
+
+.footer-about p {
+    font-size: 14px;
+    line-height: 1.6;
+    color: #B0B0B0;
+}
+
+/* Нижній текст футера */
+.footer-bottom {
+    text-align: center;
+    font-size: 14px;
+    color: #B0B0B0;
+}
+
+.footer-bottom p {
+    margin: 0;
+}

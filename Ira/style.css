@@ -1,0 +1,176 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", sans-serif;
+  }
+  
+  body {
+    background-color: #a6c7f5;
+  }
+  
+  .container {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  header {
+    background-color: #dbe8ff;
+    border-radius: 20px;
+    padding: 10px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .logo {
+    display: flex;
+    align-items: center;
+  }
+  
+  .logo img {
+    width: 50px;
+    margin-right: 10px;
+  }
+  
+  .logo h1 {
+    font-size: 24px;
+    color: #8899c0;
+  }
+  
+  .logo span {
+    color: white;
+    font-weight: bold;
+  }
+  
+  .nav-icons {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+  }
+  
+  .nav-icons i {
+    font-size: 20px;
+    color: #6c7bb6;
+  }
+  
+  .auth-buttons button {
+    padding: 5px 15px;
+    border: none;
+    border-radius: 20px;
+    background-color: #8ea9e8;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  .auth-buttons button.active {
+    background-color: #5a76cb;
+  }
+  
+  main {
+    display: flex;
+    margin-top: 40px;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .left {
+    text-align: center;
+    flex: 1;
+  }
+  
+  .left img.main-owl {
+    width: 250px;
+  }
+  
+  .left h1 {
+    margin-top: 20px;
+    font-size: 32px;
+    color: #8899c0;
+  }
+  
+  .left h1 span {
+    color: white;
+    font-weight: bold;
+  }
+  
+  .right {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .form-box {
+    background-color: #eaf2ff;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 5px 8px 12px rgba(0, 0, 0, 0.2);
+    width: 80%;
+    max-width: 400px;
+  }
+  
+  .form-box h2 {
+    color: #88a6e3;
+    font-size: 28px;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  form label {
+    color: #5a76cb;
+    display: block;
+    margin-top: 15px;
+  }
+  
+  form input {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border-radius: 20px;
+    border: none;
+    background: #b0c8f0;
+  }
+  
+  .login-btn,
+  .google-btn {
+    margin-top: 20px;
+    width: 100%;
+    padding: 10px;
+    border-radius: 20px;
+    border: none;
+    font-weight: bold;
+    background-color: #a5bced;
+    color: white;
+    cursor: pointer;
+    box-shadow: 2px 4px 6px rgba(0, 0, 0, 0.2);
+  }
+  
+  .google-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    background-color: #d6dff6;
+    color: #5a76cb;
+  }
+  
+  footer {
+    text-align: center;
+    margin-top: 40px;
+    color: white;
+  }
+  
+  .socials {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .socials i {
+    font-size: 20px;
+    color: #5a76cb;
+  }

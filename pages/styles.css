@@ -628,5 +628,323 @@ background-blend-mode: hard-light;
 .footer-bottom p {
     margin: 0;
 }
+.logo {
+    display: flex;
+    align-items: center;
+  }
+  
+  .logo img {
+    width: 50px;
+    margin-right: 10px;
+  }
+  
+  .logo h1 {
+    font-size: 24px;
+    color: #8899c0;
+  }
+  
+  .logo span {
+    color: white;
+    font-weight: bold;
+  }
+  
+  .nav-icons {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+  }
+  
+  .nav-icons i {
+    font-size: 20px;
+    color: #6c7bb6;
+  }
+  
+  .auth-buttons button {
+    padding: 5px 15px;
+    border: none;
+    border-radius: 20px;
+    background-color: #8ea9e8;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  .auth-buttons button.active {
+    background-color: #5a76cb;
+  }
+  
+  main {
+    display: flex;
+    margin-top: 200px;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .left {
+    text-align: center;
+    flex: 1;
+  }
+  
+  .left img.main-owl {
+    width: 250px;
+  }
+  
+  .left h1 {
+    margin-top: 20px;
+    font-size: 32px;
+    color: #8899c0;
+  }
+  
+  .left h1 span {
+    color: white;
+    font-weight: bold;
+  }
+  
+  .right {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .form-box {
+    background-color: #eaf2ff;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 5px 8px 12px rgba(0, 0, 0, 0.2);
+    width: 80%;
+    max-width: 400px;
+  }
+  
+  .form-box h2 {
+    color: #88a6e3;
+    font-size: 28px;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  form label {
+    color: #5a76cb;
+    display: block;
+    margin-top: 15px;
+  }
+  
+  form input {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border-radius: 20px;
+    border: none;
+    background: #b0c8f0;
+  }
+  
+  .login-btn,
+  .google-btn {
+    margin-top: 20px;
+    width: 100%;
+    padding: 10px;
+    border-radius: 20px;
+    border: none;
+    font-weight: bold;
+    background-color: #a5bced;
+    color: white;
+    cursor: pointer;
+    box-shadow: 2px 4px 6px rgba(0, 0, 0, 0.2);
+  }
+  
+  .google-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    background-color: #d6dff6;
+    color: #5a76cb;
+  }
+  
+  footer {
+    text-align: right;
+    margin-right: 10px;
+    margin-top: 40px;
+    color: white;
+  }
+  
+  .socials {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .socials i {
+    font-size: 20px;
+    color: #5a76cb;
+  }
 
+  /*registration*/
+  body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #ABC8FF;
+    color: #333;
+  }
+  
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #c9dcf8;
+    padding: 10px 30px;
+    border-bottom: 2px solid #aaa;
+    border-radius: 0 0 20px 20px;
+  }
+  
+  .header-logo {
+    display: flex;
+    align-items: center;
+  }
+  
+  .header-logo img {
+    width: 50px;
+    margin-right: 10px;
+  }
+  
+  .header-logo h1 {
+    font-size: 1.5em;
+    margin: 0;
+  }
+  
+  .header-logo .light {
+    color: #888;
+    font-weight: normal;
+  }
+  
+  .header-menu button {
+    margin-left: 10px;
+    padding: 6px 12px;
+    border-radius: 8px;
+    border: none;
+    background-color: white;
+    box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+  }
+  
+  main {
+    display: flex;
+    margin-top: 150px;
+    justify-content: space-around;
+    align-items: center;
+    padding: 50px 20px;
+  }
+  
+  .register-left h1 {
+    margin-top: 20px;
+    margin-right: 30px;
+    font-size: 32px;
+    color: #8899c0;
+  }
+  
+  .register-left h1 span {
+    color:  #5a76cb;
+    font-weight: bold;
+  }
+  
+  .register-left {
+    text-align: center;
+    flex: 1;
+    width: 400px;
+    margin-bottom: 30px;
+    margin-right: 40px; /* Зсув вліво */
+  }
+  
+  .register-left img {
+    width: 250px;
+    margin-left: -10px;
+    margin-right: 5px;
+  }
+  .register-form-box {
+    background-color: #eaf2ff; /* такий самий як у login */
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 5px 8px 12px rgba(0, 0, 0, 0.2); /* такий самий як у form-box */
+    width: 450px;
+    margin-right: 180px;
+  }
+  
+  .register-form-box h2 {
+    text-align: center;
+    color: #88a6e3; /* той самий відтінок як form-box h2 */
+    margin-bottom: 20px;
+  }
+  
+  .register-form-box label {
+    display: block;
+    margin-bottom: 10px;
+    color: #5a76cb; /* такий самий як form label */
+  }
+  
+  .register-form-box input {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border-radius: 20px;
+    border: none;
+    background-color: #b0c8f0; /* як у form input */
+  }
+  
+  .register-form-box button {
+    margin-top: 20px;
+    width: 100%;
+    padding: 10px;
+    border-radius: 20px;
+    background-color: #a5bced; /* як login-btn */
+    border: none;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 2px 4px 6px rgba(0, 0, 0, 0.2); /* як login-btn */
+  }
+  
+  .register-left h1 {
+    font-size: 32px;
+    color: #8899c0; /* такий самий як .left h1 */
+    margin-top: 20px;
+    margin-right: 30px;
+  }
+  
+  .register-left h1 span {
+    color: white;
+    font-weight: bold;
+  }
+  
+  
+  footer {
+    text-align: center;
+    margin-top: 60px;
+    color: white;
+  }
+  
+  footer p {
+    color: white;
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .socials {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .socials i {
+    font-size: 22px;
+    color: #5a76cb;
+    cursor: pointer;
+    transition: transform 0.2s ease, color 0.2s ease;
+  }
+  
+  .socials i:hover {
+    transform: scale(1.2);
+    color: #3d5dbd;
+  }
 

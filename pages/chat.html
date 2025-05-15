@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CollabStudy Chat</title>
+  <link rel="stylesheet" href="stylchat.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="top-panel">
+    <div class="logo">
+      <img src="../assets/logo.svg" alt="Логотип CollabStudy" width="57" height="50">
+      <img src="../assets/CollabStudy.svg" alt="CollabStudy" width="105">
+    </div>
+    <div class="header-icons">
+      <img src="../assets/search.svg" alt="search" class="icon">
+      <img src="../assets/Vector.svg" alt="messages" class="icon">
+      <img src="../assets/post.svg" alt="post" class="icon">
+      <img src="../assets/calendar.svg" alt="calendar" class="icon">
+      <img src="../assets/avatar.jpg" alt="Avatar" class="avatar">
+    </div>
+  </div>
+
+  <div class="background">
+    <div class="container">
+      <div class="main">
+        
+        <!-- Ліва панель чату -->
+        <div class="sidebar">
+          <div class="chat-user active">
+            <img src="../assets/avatar.jpg" alt="User" class="avatar-mini">
+            <div class="chat-info">
+              <div class="name">Свистун Вадим</div>
+              <div class="preview">Дай Боже</div>
+            </div>
+          </div>
+          <div class="chat-user">
+            <img src="../assets/avatar2.jpg" alt="User" class="avatar-mini">
+            <div class="chat-info">
+              <div class="name">Микитюк Максим</div>
+              <div class="preview">Вадім, мат. готова?</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Центр - чат -->
+        <div class="chat-container">
+          <div class="chat-header">
+            <img src="../assets/avatar.jpg" alt="User" class="avatar-mini"> 
+            <span>Свистун Вадим</span>
+          </div>
+          
+          <div class="messages">
+            <div class="message incoming">
+              <img src="../assets/avatar.jpg" alt="User" class="avatar-mini">
+              <div class="message-bubble">
+                Дай Боже
+              </div>
+            </div>
+          </div> <!-- Закриття .messages -->
+
+          <div class="message-form">
+            <input type="text" placeholder="Введіть повідомлення..." />
+            <button>Надіслати</button>
+          </div>
+
+        </div> <!-- Закриття .chat-container -->
+
+        <!-- Права панель -->
+        <div class="right-panel"></div>
+
+      </div> <!-- Закриття .main -->
+    </div> <!-- Закриття .container -->
+  </div> <!-- Закриття .background -->
+
+</body>
+</html>

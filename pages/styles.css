@@ -948,3 +948,270 @@ background-blend-mode: hard-light;
     color: #3d5dbd;
   }
 
+
+
+
+
+
+
+
+/*CHAT*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+  }
+  
+  body, html {
+    height: 100%;
+    background-color: #bfd3fa;
+  }
+  
+  /* Верхня панель */
+  .top-panel {
+    width: 100%;
+    height: 80px;
+    background-color: #D7E3FC;
+    border-radius: 0 0 30px 30px;
+    padding: 12px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.30); /* додано тінь */
+    position: relative;
+    z-index: 10;
+   
+  }
+  
+  /* Лого і назва */
+  .logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    
+  }
+  
+  /* Іконки зверху */
+  .header-icons {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+  
+  .icon {
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+  }
+  
+  .avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+  
+  /* Основний контейнер */
+  .background {
+    display: flex;
+    justify-content: center;
+    padding: 30px;
+  }
+  
+  .container {
+    width: 100%;
+    max-width: 1400px;
+    background-color: #EDF2FB;
+    border-radius: 30px 0  0 30px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.5);
+  }
+  
+  /* Основна частина */
+  .main {
+    display: flex;
+    height: 80vh;
+  }
+  
+  /* Бічна панель */
+  .sidebar {
+    width: 250px;
+    background-color: #D7E3FC;
+    padding: 3px;
+    border-radius:30px 0 0 30px ;
+    border-right: 3px solid #ABC4FF;
+    display: flex;
+    flex-direction: column;
+  
+  }
+  
+  .chat-user {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+    background-color: #edf2fb;
+    cursor: pointer;
+    margin-bottom: 0;
+    border: 2px solid #ABC4FF; /* чорна рамка */
+    transition: background-color 0.3s, border-color 0.3s;
+    font-family:'Roboto', sans-serif;; /* шрифт */
+    color: #253459;       /* колір тексту */
+    font-size: 10px;
+  }
+  .chat-user:first-child {
+    border-radius: 30px  0 0 0; /* Кути для першого елемента */
+  }
+  
+  .chat-user:last-child {
+    border-radius: 0; /* Кути для другого елемента */
+  }
+  .chat-user:hover {
+    background-color: #abc4ff;
+    border: 2px solid white; /* біла рамка при наведенні */
+  }
+  .chat-info .name {
+    font-weight: 700;
+    font-size: 14px;
+    color: #253459;
+  }
+  
+  .chat-info .preview {
+    font-weight: 400;
+    font-size: 10px;
+    color: #4664AC;
+  }
+  
+  .avatar-mini {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+  
+  /* Контейнер чату */
+  .chat-container {
+    flex: 1;
+    background-color: #e6eefb;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+  }
+  .badge {
+    background-color: #6c47ec; /* фіолетовий */
+    color: white;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    font-size: 12px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: 10px;
+  }
+  
+  /* Верхня панель в чаті */
+  .chat-header {
+    display: flex;
+    align-items: center;
+    background-color: #b2cafe;
+    color: #253459;
+    padding: 0px 20px 5px 20px;;
+    border-radius: 0 0 0 30px;
+    margin-top: -20px;
+    margin-bottom: 20px;
+    margin-left: -20px;
+    font-weight: bold;
+    width: 350%;
+    box-shadow: inset 0 4px 8px rgba(0, 0, 0, 0.1); 
+    
+  }
+  .chat-header > :nth-child(2) {
+    margin-left: 10px; /* між 1 і 2 */
+  }
+  
+  .chat-header > :nth-child(3) {
+    margin-left: 850px; /* між 2 і 3 */
+  }
+  /* Область повідомлень */
+  .messages {
+    flex: 1;
+    overflow-y: auto;
+    padding-right: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  /* Повідомлення */
+  .message {
+    display: flex;
+    align-items: flex-end;
+    gap: 10px;
+    margin-top: 400px;
+  }
+  
+  .message-bubble {
+    background-color: #abc4ff;
+    color: #ffffff;
+    padding: 10px 15px;
+    border-radius: 20px 0 20px 20px;
+    width: 485px;
+    font-size: 0.95em;
+  }
+  
+  /* Поле вводу */
+  .message-form {
+    display: flex;
+    align-items: center;
+    padding-top: 10px;
+    gap: 10px;
+    
+  }
+  
+  .message-form input {
+    flex: auto;
+    padding: 12px 15px;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+    background-color:#ABC4FF;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    box-shadow: inset 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .message-form button {
+    padding: 10px 10px;
+    background-color: #CCDBFD; /* світлий */
+    color: #ffffff;
+    border: 1px solid #C8D0E1; /* сіра рамка */
+    border-radius: 20px 0 20px 20px;
+    cursor: pointer;
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.5);
+    transition: background-color 0.3s;
+  }
+  
+  .message-form button:hover {
+    background-color: #abc4ff;
+  }
+  /* Правий додатковий блок */
+  .right-panel {
+    width: 8%; /* Ширина правого панелю займає всю доступну ширину */
+    height: 471px; 
+    background-color: #c7cedf;
+    border-radius: 0 0 20px 20px;
+    margin-top: 6px; /* Задаємо відступ між чат заголовком та правим панелем */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    position: absolute; /* Позиціонуємо елемент відносно батьківського елемента */
+  
+    right: 68px; /* Відстань від правого краю форми (регулюється для точного розташування) */
+    top: 50%; /* Центруємо панель по вертикалі */
+    transform: translateY(-50%); /* Вирівнюємо по середині */
+   
+  } 
+  

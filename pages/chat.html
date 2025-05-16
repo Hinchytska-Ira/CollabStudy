@@ -1,10 +1,11 @@
+
 <!DOCTYPE html>
 <html lang="uk">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>CollabStudy Chat</title>
-  <link rel="stylesheet" href="stylchat.css" />
+  <link rel="stylesheet" href="styles.css" />
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
@@ -26,7 +27,7 @@
     <div class="container">
       <div class="main">
         
-        <!-- Ліва панель чату -->
+        <!-- Ліва панель -->
         <div class="sidebar">
           <div class="chat-user active">
             <img src="../assets/avatar.jpg" alt="User" class="avatar-mini">
@@ -40,15 +41,18 @@
             <div class="chat-info">
               <div class="name">Микитюк Максим</div>
               <div class="preview">Вадім, мат. готова?</div>
+              
             </div>
+            <div class="badge">1</div>
           </div>
         </div>
 
-        <!-- Центр - чат -->
+        <!-- Центр: чат -->
         <div class="chat-container">
           <div class="chat-header">
             <img src="../assets/avatar.jpg" alt="User" class="avatar-mini"> 
             <span>Свистун Вадим</span>
+            <img src="../assets/Vector-1.svg" alt="search" class="icon">
           </div>
           
           <div class="messages">
@@ -58,21 +62,20 @@
                 Дай Боже
               </div>
             </div>
-          </div> <!-- Закриття .messages -->
-
-          <div class="message-form">
-            <input type="text" placeholder="Введіть повідомлення..." />
-            <button>Надіслати</button>
           </div>
 
-        </div> <!-- Закриття .chat-container -->
+          <div class="message-form">
+            <input type="text" placeholder="Повідомлення..." />
+            <button>Надіслати</button>
+            <div class="right-panel"></div>
+          </div>
+        </div>
 
-        <!-- Права панель -->
-        <div class="right-panel"></div>
-
-      </div> <!-- Закриття .main -->
-    </div> <!-- Закриття .container -->
-  </div> <!-- Закриття .background -->
+      </div>
+    </div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="/js/loadHeader.js"></script>
 
 </body>
 </html>

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>CollabStudy Календар</title>
+  <link rel="stylesheet" href="/css/styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="top-panel">
+    <div class="logo">
+      <img src="../assets/logo.svg" alt="Логотип CollabStudy" width="57" height="50">
+      <img src="../assets/CollabStudy.svg" alt="CollabStudy" width="105">
+    </div>
+    <div class="header-icons">
+      <img src="../assets/search.svg" alt="search" class="icon">
+      <img src="../assets/Vector.svg" alt="messages" class="icon">
+      <img src="../assets/post.svg" alt="post" class="icon">
+      <img src="../assets/calendar.svg" alt="calendar" class="icon">
+      <img src="../assets/avatar.jpg" alt="Avatar" class="avatar">
+    </div>
+  </div>
+  
+    <main class="main">
+      <section class="event-form">
+        <h1>Додати подію</h1>
+        <label for="title">Назва</label>
+        <input type="text" id="title" placeholder="">
+
+        <label for="comment">Комент</label>
+        <textarea id="comment"></textarea>
+
+        <div class="color-picker">
+          <label for="color">Колір</label>
+          <div class="color-circle"></div>
+          <button class="ok-btn">OK</button>
+        </div>
+      </section>
+
+      <section class="calendar">
+        <div class="calendar-header">
+          <select>
+            <option>Березень</option>
+            <!-- Можна додати інші місяці -->
+          </select>
+        </div>
+
+        <div class="calendar-grid">
+          <div class="day-name">ПН</div>
+          <div class="day-name">ВТ</div>
+          <div class="day-name">СР</div>
+          <div class="day-name">ЧТ</div>
+          <div class="day-name">ПТ</div>
+          <div class="day-name weekend">СБ</div>
+          <div class="day-name weekend">НД</div>
+
+          <!-- Дні місяця -->
+          <div class="day">1</div>
+          <div class="day">2</div>
+          <div class="day">3</div>
+          <div class="day">4</div>
+          <div class="day">5</div>
+          <div class="day weekends">6</div>
+          <div class="day weekends">7</div>
+          <div class="day">8</div>
+          <div class="day active">9</div>
+          <div class="day">10</div>
+          <div class="day">11</div>
+          <div class="day">12</div>
+          <div class="day weekends">13</div>
+          <div class="day weekends">14</div>
+          <div class="day">15</div>
+          <div class="day">16</div>
+          <div class="day">17</div>
+          <div class="day">18</div>
+          <div class="day">19</div>
+          <div class="day weekends">20</div>
+          <div class="day weekends">21</div>
+          <div class="day">22</div>
+          <div class="day">23</div>
+          <div class="day">24</div>
+          <div class="day">25</div>
+          <div class="day">26</div>
+          <div class="day weekends">27</div>
+          <div class="day weekends">28</div>
+          <div class="day">29</div>
+          <div class="day">30</div>
+          <div class="day">31</div>
+        </div>
+
+        <div class="event-note">
+          <span>9 Виш Мат з Денисом</span>
+        </div>
+      </section>
+
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    
+      <script src="/js/loadFooter.js"></script>
+
+    </main>
+  </div>
+</body>
+</html>

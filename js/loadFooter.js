@@ -1,14 +1,18 @@
-// loadFooter.js
-
-// Функція для завантаження футера на сторінку
-function loadFooter() {
-    fetch('footer.html') // Завантажуємо футер з файлу footer.html
-        .then(response => response.text())
-        .then(data => {
-            document.body.insertAdjacentHTML('beforeend', data); // Додаємо футер в кінець body
-        })
-        .catch(error => console.error('Помилка при завантаженні футера:', error));
-}
-
-// Викликаємо функцію при завантаженні сторінки
-window.addEventListener('load', loadFooter);
+fetch('/pages/header.html')
+  .then(response => {
+    if (!response.ok) {
+      throw new Error(`Помилка завантаження хедера: ${response.status}`);
+    }
+    return response.text();
+  })
+  .then(data => {
+    const placeholder = document.getElementById('header-placeholder');
+    if (placeholder) {
+      placeholder.innerHTML = data;
+    } else {
+      console.error('❌ Не знайдено елемент з id="header-placeholder"');
+    }
+  })
+  .catch(error => {
+    console.error('❌ Сталася помилка при завантаженні хедера:', error);
+  });

@@ -5,6 +5,15 @@
     font-family: "Segoe UI", sans-serif;
   }
   
+  .collab-study{
+
+    
+    position: relative;
+    padding-top: 30px;
+
+
+  }
+
   body {
     background-color: #a6c7f5;
   }

@@ -1,0 +1,211 @@
+/* Глобальні стилі */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+  }
+  
+  body, html {
+    height: 100%;
+    background-color: #bfd3fa;
+  }
+  
+  /* Верхня панель */
+  .top-panel {
+    width: 100%;
+    height: 80px;
+    background-color: #D7E3FC;
+    border-radius: 0 0 30px 30px;
+    padding: 12px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.30);
+    position: relative;
+    z-index: 10;
+  }
+  
+  /* Лого і назва */
+  .logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  /* Іконки зверху */
+  .header-icons {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+  
+  .icon {
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+  }
+  
+  .avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+  
+  /* Контейнер основного контенту */
+  .container {
+    display: flex;
+    justify-content: center;
+    padding: 40px 20px;
+  }
+  
+  /* Ліва панель */
+  .left-panel {
+    margin-right: 100px;
+    text-align: center;
+  }
+  
+  .profile-photo {
+    width: 282.68px;
+    height: 312.09px;
+    object-fit: cover;
+    border-radius: 40px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  }
+  
+  .info-box {
+    width: 254px;
+    height: 218px;
+    background: #D7E3FC;
+    border-radius: 30px;
+    padding: 15px;
+    margin-top: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+    text-align: left;
+    font-weight: bold;
+  }
+  .info-box p b {
+    font-weight:bold;
+    color: #3C5EA8;
+    font-family: 'Roboto', sans-serif;
+    font-style: italic;
+    margin-right: 10px; 
+    font-size: 20px
+  }
+  
+  
+  .info-box p {
+    margin: 8px 0;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-style: ;
+    font-size: 20px;
+  }
+  .edit-btn {
+    display: block;
+    margin: 25px auto 0;
+    background-color: #ABC4FF;
+    border: none;
+    padding: 10px 30px;
+    border-radius: 30px;
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.25);
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3)
+  }
+ /* Права панель */
+.right-panel {
+  background-color: #dce5fc;
+  border-radius: 30px;
+  padding: 20px 30px;
+  width: 630px;
+  height: 547px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  font-family: 'Roboto', sans-serif;
+  font-style: italic;
+  margin: 0 90px;
+}
+
+/* Таблиця */
+.right-panel table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.right-panel td {
+  padding: 20px 20px;
+  border-bottom: 3px solid white;
+  border-right: 3px solid white;
+  vertical-align: top;
+  font-family: 'Roboto', sans-serif;
+  font-style: italic;
+}
+
+/* Останній стовпець — без правої межі */
+.right-panel tr td:last-child {
+  border-right: none;
+}
+
+
+
+/* Ліва колонка */
+.right-panel td:first-child {
+  font-weight: bold;
+  color: #3C5EA8;
+  width: 40%;
+  font-size: 20px;
+}
+
+/* Права колонка */
+.right-panel td:last-child {
+  color: #829BD0;
+
+}
+
+/* Сірий текст */
+.gray {
+  color: gray;
+  font-style: italic;
+}
+
+/* Жирний текст */
+.bold {
+  font-weight: bold;
+  color: #6077b5;
+  
+}
+.first-word {
+  font-size: 30px;
+  font-weight: bold;
+  color: #829BD0;
+  margin-right: 6px;
+  display: inline-block;
+}
+
+/* Кнопка редагування */
+.edit-btn-1 {
+  display: block;
+  margin: 25px auto 0;
+  background-color: #ABC4FF;
+  border: none;
+  padding: 10px 30px;
+  border-radius: 30px;
+  color: #fff;
+  font-size: 16px;
+  font-weight: bold;
+  font-family: 'Roboto', sans-serif;
+  font-style: italic;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.25);
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+.edit-btn-1:hover {
+  background-color: #6b89d6;
+}

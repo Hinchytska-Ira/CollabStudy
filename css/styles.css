@@ -631,18 +631,330 @@ background-blend-mode: hard-light;
 }
 
 
+<<<<<<< HEAD
 /*registration*/
   body {
     margin: 0;
     font-family: 'Arial', sans-serif;
     background-color: #ABC8FF;
     color: #333;
+=======
+<<<<<<< HEAD
+=======
+
+
+
+
+/*Календар*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #a6c7f5;
+    color: #fff;
+  }
+  
+  .container {
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+  }
+  
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #c9d8f2;
+    padding: 10px 20px;
+    border-radius: 15px;
+  }
+  
+  .logo {
+    display: flex;
+    align-items: center;
+  }
+  
+  .logo img {
+    height: 40px;
+    margin-right: 10px;
+  }
+  
+  .logo .highlight {
+    color: #8ba8e5;
+  }
+  
+  .header-icons .icon {
+    width: 25px;
+    height: 25px;
+    margin-left: 15px;
+    background-color: transparent; /* ✅ забирає фон */
+    border-radius: 0;              /* ✅ забирає круглу форму */
+    box-shadow: none;              /* ✅ перестраховка, прибирає будь-яку тінь */
+}
+
+  
+  .main {
+    margin-bottom: 200px;
+    margin-left: 150px;
+    margin-right: 150px;
+    display: flex;
+    margin-top: 100px;
+    gap: 150px;
+  }
+  
+  .event-form {
+    flex: 0.8;
+    background-color: #9ab9e5;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 5px 8px 6px rgba(0, 0, 0, 0.2); /* Тінь для іконки */
+    margin-top: 80px;
+  }
+  
+  .event-form h1 {
+    margin-bottom: 20px;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .event-form label {
+    display: block;
+    margin-top: 15px;
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+
+  h1, h2, h3, h4, h5, h6, label, .event-note, .day-name {  /*косинкою текст*/
+    transform: skewX(-10deg);
+  }
+  
+  .event-form input,
+  .event-form textarea {
+    width: 100%;
+    border: none;
+    border-radius: 20px;
+    padding: 10px;
+    background-color: #a9c5f2;
+    resize: none;
+  }
+  
+  .color-picker {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .color-circle {
+    width: 25px;
+    height: 25px;
+    background: conic-gradient(red, yellow, lime, aqua, blue, magenta, red);
+    border-radius: 50%;
+  }
+  
+  .ok-btn {
+    background-color: #d7dff5;        
+    color: #000000;                   
+    border: none;
+    border-radius: 30px;              
+    padding: 12px 25px;
+    cursor: pointer;
+    font-weight: bold;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.15);  
+  }
+  
+  .calendar {
+    flex: 1.3;                           /* було 1 — тепер займає більше простору */
+    transform: scale(1.1);             /* трошки збільшує сам календар */
+    transform-origin: top center;
+  }
+  
+  .calendar-header {
+    text-align: right;
+    margin-bottom: 10px;
+  }
+  
+  .calendar-header select {
+    background: #D7E3FC;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 30px;
+    padding: 15px 40px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #1d2940;
+    border: none;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+
+  .calendar-grid {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 18px;
+  }
+  
+  .day-name {
+    text-align: center;
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.25);
+    font-weight: bold;
+    color: #fff; /* Білий текст */
+    padding: 10px;
+    font-size: 25px;
+    border-radius: 12px; /* Заокруглені краї */
+  }
+  
+  .day {
+    width: 100%;
+    padding: 15px 0;
+    text-align: center;
+    background-color: #1d2940; /* темний фон як у тебе */
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: bold;
+    color: #ffffff; /* білий текст, якщо раптом не було */
+    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.5); /* тінь до цифр */
+    box-shadow: 2px 8px 6px rgba(0, 0, 0, 0.2); /* Тінь для іконки */
+  }
+  
+  .day.active {
+    background-color: #0099ff;
+  }
+  
+  .weekend {
+    color: #3C5EA8;
+  }
+  .weekends{
+    color: #8AA8EC;
+  }
+  .event-note {
+    margin-top: 20px;
+    background-color: #0099ff;
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-weight: bold;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.15);  
+  }
+  
+
+
+
+
+
+
+/*хедер*/
+
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+  }
+  
+  /* Основні налаштування */
+  body, html {
+    height: 100%;
+    background-color: #bfd3fa;
+  }
+  
+  /* Верхня панель */
+  .top-panel {
+    width: 100%;
+    background-color: #d7e3fc;
+    border-radius: 0px 0px 30px 30px;
+    padding: 12px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+    position: fixed;
+    z-index: 10;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.30);
+  }
+  
+  .logo {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    scale: 1.2;         /* 🔧 Можна змінювати розмір всього блоку */
+    
+  }
+  
+  /* Іконки зверху */
+  .header-icons {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+  
+  .icon {
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+  }
+  
+  .avatar {
+    width: 65px;
+    height: 65px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+  
+  /* Основний контейнер */
+  .background {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+  }
+  
+  .container {
+    width: 100%;
+    max-width: 1400px;
+    background-color: #d6e2fa;
+    border-radius: 20px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+  }
+
+
+
+
+
+
+
+
+  
+  /* Venom-сторінка */
+  
+  main {
+    flex: 1;
+    padding-top: 125px; /* або висота .top-panel */
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  
+  body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #a6c7f5;
+    padding-top: 0px;
+padding-bottom: 10px;
+>>>>>>> db2bf077d07d4d4e06798e445434b7576a326dda
   }
   
   header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+<<<<<<< HEAD
     background: #c9dcf8;
     padding: 10px 30px;
     border-bottom: 2px solid #aaa;
@@ -871,3 +1183,192 @@ background-blend-mode: hard-light;
     font-size: 20px;
     color: #5a76cb;
   }
+=======
+    background: #dce6ff;
+    padding: 15px 30px;
+    border-radius: 0 0 20px 20px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  }
+  
+  .logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 24px;
+  }
+  
+  .logo img {
+    height: 40px;
+  }
+  
+  .icons {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+  
+  .icon {
+    font-size: 20px;
+    cursor: pointer;
+  }
+  
+  .avatar-small {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+  }
+  
+  :root {
+    --btn-width: 110px;      /* ширина кнопок */
+    --input-width: 285px;    /* ширина інпутів */
+    --select-width: 150px;   /* ширина селектів */
+    --btn-height: 55px;      /* висота кнопок, інпутів, селектів */
+    --border-radius: 25px;   /* радіус заокруглення */
+    --font-size: 19.5px;       /* розмір шрифту */
+  }
+  
+  .filters {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 53px;
+  
+    width: 100%;
+    max-width: 1200px;
+    min-height: 60px;
+    margin: 30px auto;
+    padding: 15px 20px;
+  
+    border-radius: 12px;
+    filter: drop-shadow(0px 0px 0px rgba(0, 0, 0, 0.25)); /* тінь як ти просив */
+  }
+  
+  .filters button,
+  .filters input,
+  .filters select {
+    padding: 10px 15px;
+    border: none;
+    border-radius: var(--border-radius);
+    background: #e1e9ff;
+    box-shadow: 5px 8px 6px rgba(0, 0, 0, 0.2); /* Тінь для іконки */
+    font-size: var(--font-size);
+    color: black;
+    cursor: pointer;  /* для кнопок і селектів */
+    height: var(--btn-height);
+    font-family: 'Roboto', sans-serif;
+    transition: background-color 0.3s ease;
+  }
+  
+  .filters input {
+    width: var(--input-width);
+    cursor: text;  /* для input курсор тексту */
+  }
+  
+  .filters select {
+    width: var(--select-width);
+    color: white;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  }
+  
+  .filters button {
+    width: var(--btn-width);
+    color: white;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  }
+  
+  .filters button:hover,
+  .filters select:hover,
+  .filters input:hover {
+    background-color: #CCDBFD;
+  }
+  
+  
+  
+  .cards {
+    display: flex;
+    justify-content: center;
+    gap: 120px;
+    padding: 20px;
+    flex-wrap: wrap;
+  }
+  
+  .card {
+    background: #ecf3ff;
+    padding: 35px 20px;
+    border-radius: 30px;
+    width: 350px;
+    height: 480px; /* фіксована висота */
+
+    box-shadow: 5px 8px 15px #b1c3e7;
+    transition: transform 0.2s ease;
+
+    display: flex;            /* flex контейнер */
+    flex-direction: column;   /* вертикальна колонка */
+    align-items: center;      /* всі елементи по центру по горизонталі */
+    justify-content: flex-start; /* вміст зверху, не по центру вертикально */
+    gap: 15px;                /* відстань між елементами */
+}
+
+.card img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    flex-shrink: 0;           /* щоб фото не зменшувалось */
+}
+
+.card h3 {
+    color: #4a6edb;
+    margin: 0;
+    font-weight: 700;
+    text-align: center;
+}
+
+.card p {
+    color: #4a6edb;
+    font-weight: 500;
+    font-size: 22px;
+    margin: 0;
+    text-align: center;
+}
+
+.card a {
+    display: block;
+    color: #6b90ff;
+    text-decoration: none;
+    font-size: 19.5px;
+    font-weight: bold;
+    margin-top: 10px;
+    text-align: center;
+}
+
+.card button {
+    margin-top: 40px; 
+    padding: 10px 25px;
+    font-size: 25px;
+    border: none;
+    border-radius: 20px;
+    background-color: #dbe7ff;
+    color: #4a6edb;
+    font-weight: bold;
+    box-shadow: 2px 4px 0 #c1d2f0;
+    cursor: pointer;
+}
+
+
+  html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .page-wrapper {
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  
+  
+>>>>>>> 70814ff (Add new assets and pages)
+>>>>>>> db2bf077d07d4d4e06798e445434b7576a326dda
